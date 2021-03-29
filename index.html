@@ -22,52 +22,32 @@
 <body>
 
   <header class="header">
-    <div class="header-top-wrap">
-      <div class="header-inner container">
-        <div class="logo-area">
-          <a href="https://csumb.edu/" class="navbar-logo" tabindex="1">
-            <img src="images/logo.svg" alt=""/>
-            </a>
-        </div>
-      </div>
-    </div>
+    <a href="https://csumb.edu/" class="navbar-logo" tabindex="1">
+      <img src="images/logo.svg" alt="" />
+    </a>
+    <div class="hero"></div>
+  </header>
+  <div class="body">
     <!-- /wrap.content -->
     {form} [begin]
-    <!-- hero area and searchbar -->
-  </header>
-  <div class="navbar-search">
-    <div class="row container" style="width: 70%; padding: 10px 20px 15px 20px; margin: 0 auto;">
-      <div class="navbar-search" style="background-color: #ffffff;">{search-keyword placeholder="Search Jobs by
-        Keywords"}</div>
+    <div class="search-column">
+      <h3>Job Search</h3>
+      <div class="search" style="background-color: #ffffff;">{search-keyword placeholder="Search Jobs by
+        Keywords"}
+        <div class="side-callout">
+          <h3>Filter Your Search</h3>
+          <div>{search-filters}</div>
+        </div>
+      </div>
+      <!-- [end] left col -->
+      <!-- [begin] main content area -->
+      <div id="results">{messages}{pages}</div>
+      <!-- [end] main content area -->
     </div>
+    <!-- [end] main row -->
+    {/form}
+  </div>
 
-  </div>
-  <!-- [end] hero area and searchbar -->
-  <!-- [begin] main row -->
-  <div class="container">
-    <!-- [begin] left col -->
-    <div class="col-sm-3 sidenav" style="padding: 25px 0px 0px 0px;">
-      <div>
-        <h4><a href="https://jobs.sjsu.edu/">Careers Listings</a></h4>
-      </div>
-      <div style="padding: 0px 0px 5px 0px;">
-        <h4><a href="https://secure.dc4.pageuppeople.com/apply/873/sj/applicationForm/default.asp">Applicant Login</a>
-        </h4>
-        <h4><a href="https://jobs.sjsu.edu/sj/en-us/subscribe">Set up Job Alerts</a></h4>
-        {messages}
-      </div>
-      <div class="side-callout">
-        <div class="column-hdr">Filter Your Search</div>
-        <div>{search-filters}</div>
-      </div>
-    </div>
-    <!-- [end] left col -->
-    <!-- [begin] main content area -->
-    <div id="content-ext" class="col-sm-9">{pages}</div>
-    <!-- [end] main content area -->
-  </div>
-  <!-- [end] main row -->
-  {/form}
   <!-- [begin] footer area -->
   <footer class="footer">
     <div class="footer-address-wrap">
@@ -136,10 +116,6 @@
   <!-- /wrap.content -->
   <!-- /wrap.footer -->
   <!-- [end] footer area -->
-  <link href="/up/docs/css/bootstrap.min.css" rel="stylesheet" />
-  <script type="text/javascript" src="https://kit.fontawesome.com/86a4931f45.js"></script><a
-    href="https://a.cms.omniupdate.com/11/?skin=sjsu&amp;account=sjsu&amp;site=www&amp;action=de&amp;path=/_resources/dev/chrs-sample.html"
-    target="_top" rel="nofollow" id="de">Last Updated Aug 3, 2020</a>
 </body>
 
 </html>
