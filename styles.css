@@ -15,7 +15,7 @@ body {
 .hero {
 	max-width: 100vw;
 	height: 250px;
-	background-image: url("/images/beach-image.png");
+	background-image: url("images/beach-image.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
