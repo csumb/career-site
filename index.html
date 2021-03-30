@@ -38,21 +38,23 @@
       <div id="search-column">
         <div class="search">
           <h3>Job Search</h3>
-          <div class="search-box" style="background-color: #ffffff;">
+          <div class="search-box bordered" style="background-color: #ffffff;">
             {search-keyword placeholder="Search Jobs by
             Keywords"}
           </div>
         </div>
         <div class="filter">
           <h3>Filter Your Search</h3>
-          <div>{search-filters}</div>
+          <div class="filter-box bordered">{search-filters}</div>
         </div>
       </div>
       <!-- [end] left col -->
       <!-- [begin] main content area -->
       <div id="results-column">
         <h3>Current Listings</h3>
-        {messages}{pages}
+        <div id="results" class="bordered">
+          {messages}{pages}
+        </div>
       </div>
       <!-- [end] main content area -->
     </div>
@@ -63,7 +65,7 @@
 
   <!-- [begin] footer area -->
   <footer class="footer">
-    <div class="footer-address-wrap">
+    <div class="footer-address">
       <h4>California State University, Monterey Bay</h4>
       <ul class="contact">
         <li><strong>Call:</strong> 831-582-3000</li>
