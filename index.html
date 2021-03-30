@@ -29,23 +29,36 @@
   <div class="hero"></div>
   <div class="body">
     <!-- /wrap.content -->
-    {form} [begin]
-    <div class="search-column">
-      <h3>Job Search</h3>
-      <div class="search" style="background-color: #ffffff;">{search-keyword placeholder="Search Jobs by
-        Keywords"}
-        <div class="side-callout">
+    <span>{form} [begin]</span>
+    <div id="action-buttons">
+      <a class="button" href="#">Set Up Job Alerts</a>
+      <a class="button" href="#">Applicant Login</a>
+    </div>
+    <div class="content-wrapper">
+      <div id="search-column">
+        <div class="search">
+          <h3>Job Search</h3>
+          <div class="search-box" style="background-color: #ffffff;">
+            {search-keyword placeholder="Search Jobs by
+            Keywords"}
+          </div>
+        </div>
+        <div class="filter">
           <h3>Filter Your Search</h3>
           <div>{search-filters}</div>
         </div>
       </div>
       <!-- [end] left col -->
       <!-- [begin] main content area -->
-      <div id="results">{messages}{pages}</div>
+      <div id="results-column">
+        <h3>Current Listings</h3>
+        {messages}{pages}
+      </div>
       <!-- [end] main content area -->
     </div>
-    <!-- [end] main row -->
-    {/form}
+  </div>
+  <!-- [end] main row -->
+  {/form}
   </div>
 
   <!-- [begin] footer area -->
