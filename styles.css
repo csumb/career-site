@@ -240,12 +240,22 @@ footer {
 	width: 0.8em;
 }
 
+.legal, .legal a {
+	text-align: right;
+	color: white;
+	font-size: 0.8em;
+}
+
+.legal {
+	margin-top: 10px;
+}
+
 @media (max-width: 741px) {
 	.footer {
 		padding: 20px;
 	}
 
-	.footer-address {
+	.footer-address, .legal {
 		text-align: left;
 	}
 
