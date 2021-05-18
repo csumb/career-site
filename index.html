@@ -31,22 +31,20 @@
   <div class="hero"></div>
   <div class="content">
     <!-- /wrap.content -->
-    {form} [begin]
+    {form}
     <div id="action-buttons">
-      <a class="button" href="#">Set Up Job Alerts</a>
-      <a class="button" href="#">Applicant Login</a>
+      <a class="btn" href="#">Set Up Job Alerts</a>
+      <a class="btn" href="#">Applicant Login</a>
     </div>
     <div class="content-wrapper">
       <div id="search-column">
         <div class="search">
           <h3>Job Search</h3>
-          <div class="search-box bordered" style="background-color: #ffffff;">
-            {search-keyword placeholder="Search Jobs by
-            Keywords"}
-          </div>
+          {search-keyword placeholder="Search Jobs by
+          Keywords"}
         </div>
         <div class="filter">
-          <h3>Filter Your Search</h3>
+          <h3 id="filter-heading">Filter Your Search</h3>
           <div class="filter-box bordered">{search-filters}</div>
         </div>
       </div>
