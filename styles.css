@@ -143,7 +143,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 30px;
+	margin-top: 0;
 	margin-bottom: 10vw;
 }
 
@@ -178,7 +178,6 @@ header {
 
 th {
 	text-align: left;
-	border: 1px solid #99948C;
 	background: rgba(17, 46, 81, 0.2);
 	font-weight: 400;
 }
@@ -243,6 +242,17 @@ ul.filter li label {
 
 #jobs-form {
 	margin-top: 1.5rem;
+}
+
+#campaigns {
+	border-top: 1px solid #99948C;
+}
+
+#PageUpPeopleLink,
+#campaigns {
+	padding-left: 1rem;
+	padding-top: 2rem;
+
 }
 
 @media (max-width: 800px) {
