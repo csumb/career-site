@@ -11,6 +11,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
+	/*! margin-top: 1rem; */
 }
 
 .hidden {
@@ -119,6 +120,7 @@ header {
 #action-buttons {
 	display: flex;
 	justify-content: flex-end;
+	/*! margin-top: 20px; */
 }
 
 .btn {
@@ -141,7 +143,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 30px;
+	margin-top: 0;
 	margin-bottom: 10vw;
 }
 
@@ -176,7 +178,6 @@ header {
 
 th {
 	text-align: left;
-	border: 1px solid #99948C;
 	background: rgba(17, 46, 81, 0.2);
 	font-weight: 400;
 }
@@ -239,12 +240,28 @@ ul.filter li label {
 	margin-bottom: 0.5rem;
 }
 
+#jobs-form {
+	margin-top: 1.5rem;
+}
+
+#campaigns {
+	border-top: 1px solid #99948C;
+}
+
+#PageUpPeopleLink,
+#campaigns {
+	padding-left: 1rem;
+	padding-top: 2rem;
+
+}
+
 @media (max-width: 800px) {
 
 	#search-column,
 	#results-column {
 		flex: 100%;
 		padding-right: 0;
+		max-width: 100%;
 	}
 
 	.navbar-logo img {
@@ -256,6 +273,76 @@ ul.filter li label {
 		padding: 1rem;
 		margin: 0 5px;
 		padding: 0.6rem 0.5rem;
+	}
+
+	table,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block
+	}
+
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr {
+		display: block;
+	}
+
+	td {
+		border: none;
+		position: relative;
+		padding: 1rem 0;
+	}
+
+	#jobs-form td {
+		padding: 1.5rem 1rem;
+		border: none;
+	}
+
+	td:before {
+		position: absolute;
+		top: 0;
+		left: 1rem;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		font-weight: 600;
+		font-size: 0.85rem;
+	}
+
+	tr.summary td {
+		border-bottom: 1px solid #99948C !important;
+		;
+		margin-top: 0;
+	}
+
+	td:nth-of-type(1) {
+		margin-top: 1rem;
+	}
+
+	td:nth-of-type(1):before {
+		content: "Position"
+	}
+
+	td:nth-of-type(2):before {
+		content: "Location"
+	}
+
+	td:nth-of-type(3):before {
+		content: "Open Date"
+	}
+
+	td:nth-of-type(4):before {
+		content: "Close Date"
+	}
+
+	.summary td:before {
+		content: "Description"
 	}
 }
 
