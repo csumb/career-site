@@ -123,15 +123,27 @@ header {
 	/*! margin-top: 20px; */
 }
 
-.btn {
-	background: #205493;
-	color: white;
-	text-decoration: none;
-	padding: 0.45rem 0.9rem;
-	font-size: 0.9rem;
-	font-weight: 600;
-	border-radius: 4px;
-	margin: 0 10px;
+.btn,
+.button {
+	background: #205493 !important;
+	;
+	color: white !important;
+	;
+	text-decoration: none !important;
+	;
+	padding: 0.45rem 0.9rem !important;
+	;
+	font-size: 0.9rem !important;
+	;
+	font-weight: 600 !important;
+	;
+	border-radius: 4px !important;
+	;
+	margin: 0 10px !important;
+	box-shadow: 0 !important;
+	border: none !important;
+	margin: 0.5rem !important;
+	;
 }
 
 .search-box {
@@ -274,6 +286,10 @@ ul.filter li label {
 		padding: 1rem;
 		margin: 0 5px;
 		padding: 0.6rem 0.5rem;
+	}
+
+	.content {
+		padding: 0 0.5rem;
 	}
 
 	table,
