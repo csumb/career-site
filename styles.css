@@ -113,7 +113,8 @@ header {
 	position: relative;
 }
 
-div#recent-jobs {
+div#recent-jobs,
+div.filter-box {
 	border: 1px solid #707070;
 }
 
