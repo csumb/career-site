@@ -1,3 +1,3 @@
-const covidMessage = `<p style="padding: 1rem;">Employees are required to comply with the campus’ COVID-19 requirements. Prior to your first day of employment, please visit: <a href="https://csumb.edu/health/coronavirus-information/">https://csumb.edu/health/coronavirus-information/</a> for CSUMB’s most current masking and vaccination requirements.</p>`;
-
+const covidMessage = `<p style="padding: 1rem;">The  <a href="https://calstate.policystat.com/policy/11030468/latest/">CSU Vaccination Policy</a> requires all faculty, staff, volunteers, and students who are accessing campus facilities to be immunized against COVID-19 or declare a medical or religious exemption and to upload vaccination status to the Otter Vaccination Registry (OVR) within 30 days of their start date. CSUMB’s most current masking and Covid-19 requirements are on our  <a href="https://csumb.edu/health/coronavirus-information/">COVID-19 webpage</a>. For any questions, contact <a href="mailto:universitypersonnel@csumb.edu">universitypersonnel@csumb.edu.</a>
+</p>`;
 document.getElementById("campaignsDiv").innerHTML = covidMessage;
